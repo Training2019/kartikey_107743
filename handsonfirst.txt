@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	int sum = 0, rem;
+	cout << "Enter number";
+	cin >> n;
+	if (n < 10000)
+	{
+		cout << "Enter valid number";
+	}
+	else
+	{
+		while (n != 0)
+		{
+			rem = n % 10;
+			sum += rem;
+			n /= 10;
+		}
+	}
+	
+	cout << sum;
+}
